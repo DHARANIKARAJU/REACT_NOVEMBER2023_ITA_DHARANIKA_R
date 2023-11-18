@@ -1,0 +1,11 @@
+import updatedComponent from "./HOC";
+function Person1({money,handleIncrease})
+{
+    return (
+        <div>
+            <h2>Jack is offering ${money}</h2>
+            <button onClick={handleIncrease}>Increase Offering</button>
+        </div>
+    );
+}
+export default updatedComponent(Person1);
